@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #fce0d1;
+  margin: 0;
+}
+
+#gameContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#score-container {
+  height: 15vh;
+  background-color: #69013b;
+  color: lightgray;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 15vh;
+}
+
+#button-container {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(-60deg, #663300, #e67300, #b35900, #663300);
+}
+
+.button {
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.7;
+  border-bottom: 1vw ridge #000000;
+}
+
+#button0 {
+  background-color: blue;
+  background-image: radial-gradient(circle, white 1%, blue 99%);
+}
+
+#button1 {
+  background-color: yellow;
+  background-image: radial-gradient(circle, white 1%, yellow 99%);
+}
+
+#button2 {
+  background-color: green;
+  background-image: radial-gradient(circle, white 1%, green 99%);
+}
+
+#button3 {
+  background-color: red;
+  background-image: radial-gradient(circle, white 1%, red 99%);
+}
+
+.flash {
+  transform: scale(1.05);
+  box-shadow: 0 0 2rem #fff;
+  opacity: 1;
+}
+
+.dark {
+  transform: scale(0.9);
+  box-shadow: 0 0 1rem black;
+  opacity: 1;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameInfo {
+  background-color: lightgray;
+  width: 100%;
+  height: 75%;
+  display: inline-block;
+  text-align: center;
+  font-size: 2em;
+  color: #69013b;
+}
+
+#newGame {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 25%;
+  font-size: 2em;
+  color: lightgray;
+  background-image: linear-gradient(-60deg, #663300, #e67300, #b35900, #663300);
+}
