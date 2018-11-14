@@ -1,3 +1,3 @@
 # speedTest
 
-School exercise to create a sinple speedtest -game.
+School exercise to create a simple speedtest -game.
